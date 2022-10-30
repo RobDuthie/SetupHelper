@@ -3,4 +3,6 @@
 # SetupHelper reinstall all Venus mods
 if [ -f /data/SetupHelper/reinstallMods ]; then
 	nohup /data/SetupHelper/reinstallMods > /dev/null &
+# This installs the adc	for raspi units tested on raspi 3-4 all Ok
+cp /data/dbus-adc.conf /etc/venus
 fi
