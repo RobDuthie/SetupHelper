@@ -3,4 +3,8 @@
 # SetupHelper reinstall all Venus mods
 if [ -f /data/SetupHelper/reinstallMods ]; then
 	nohup /data/SetupHelper/reinstallMods > /dev/null &
+# Activates the analog ports
+cp /data/dbus-adc.conf /etc/venus
+
+
 fi
